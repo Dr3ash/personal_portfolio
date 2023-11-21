@@ -5,7 +5,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 			<!--=============== FAVICON ===============-->
-			<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+			<link rel="shortcut icon" href="./resources/images/favicon-32x32.png" type="image/x-icon">
 
 			<!--=============== REMIXICONS ===============-->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
@@ -13,7 +13,7 @@
 			<!--=============== CSS ===============-->
 			<link rel="stylesheet" href="./resources/css/styles.css">
 
-			<title>Responsive portfolio website Rian - Bedimcode</title>
+			<title>Andrea's Portfolio</title>
 		</head>
 		<body>
 			<!--==================== HEADER ====================-->
@@ -43,7 +43,7 @@
 							</li>
 
 							<li class="nav__item">
-								<a href="#contact" class="nav__link">Contact Me</a>
+								<a href="#contact" class="nav__link nav__link-button">Contact Me</a>
 							</li>
 						</ul>
 
@@ -53,7 +53,10 @@
 						</div>
 					</div>
 
-					<div class="nav_buttons">
+					<div class="nav__buttons">
+						<!-- Theme button -->
+						<i class="ri-moon-line change-theme" id="theme-button"></i>
+
 						<!-- Toggle buttons -->
 						<div class="nav__toggle" id="nav-toggle">
 							<i class="ri-menu-4-line"></i>
@@ -73,7 +76,7 @@
 
 						<div class="home__profile">
 							<div class="home__image">
-								<img src="./resources/images/home-perfil.jpg" alt="profile image" class="home__img">
+								<img src="./resources/images/me-home.jpeg" alt="profile image" class="home__img">
 
 								<div class="home__shadow"></div>
 
@@ -123,7 +126,7 @@
 
 						<div class="about__profile">
 							<div class="about__image">
-								<img src="./resources/images/about-perfil.jpg" alt="about image" class="about__img">
+								<img src="./resources/images/me-about.jpeg" alt="about image" class="about__img">
 
 								<div class="about__shadow"></div>
 
@@ -295,6 +298,8 @@
 									<label for="message" class="contact__label">Message</label>
 								</div>
 
+								<p class="contact__message" id="contact-message"></p>
+
 								<button type="submit" class="contact__button button">
 									<i class="ri-send-plane-line"></i> Send Message
 								</button>
@@ -336,16 +341,37 @@
 
 			<!--==================== FOOTER ====================-->
 			<footer class="footer">
+				<div class="footer__container container grid">
+					<ul class="footer__links">
+						<li>
+							<a href="#home" class="footer__link">Home</a>
+						</li>
 
+						<li>
+							<a href="#services" class="footer__link">Services</a>
+						</li>
+
+						<li>
+							<a href="#projects" class="footer__link">Projects</a>
+						</li>
+					</ul>
+
+					<span class="footer__copy">
+						&#169; All Rights reserved by <a href="">Andrea Lenzini.</a>
+					</span>
+				</div>
 			</footer>
 
 			<!--========== SCROLL UP ==========-->
-
+			<a href="" class="scrollup" id="scroll-up">
+				<i class="ri-arrow-up-s-line"></i>
+			</a>
 
 			<!--=============== SCROLLREVEAL ===============-->
-			<script src=""></script>
+			<script src="./resources/js/scrollreveal.min.js"></script>
 
 			<!--=============== EMAIL JS ===============-->
+			<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 			<!--=============== MAIN JS ===============-->
 			<script src="./resources/js/main.js"></script>
