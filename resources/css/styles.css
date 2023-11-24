@@ -454,6 +454,7 @@ body.dark-theme{
 
 .home__social{
   height: max-content;
+  max-height: 150px;
   position: absolute;
   left: -3rem;
   top: 0;
